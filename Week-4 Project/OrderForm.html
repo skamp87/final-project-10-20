@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DD Order Form</title>
+    <link rel="stylesheet" href="./OrderForm.css" />
+    <script src="./OrderForm.js" defer></script>
+  </head>
+  <body>
+    <h1>Duden's Designs</h1>
+    <h2>Order Form</h2>
+
+    <br />
+    <br />
+    <!-- <fabric slideshow gallery here> -->
+    <br />
+    <p>Personalize your order below using the drop-down menus.</p>
+
+    <form action="">
+      <label for="product">Product:</label>
+      <select name="product" id="products">
+        <optgroup label="Pants">
+          <option value="harem">Harem</option>
+          <option value="loones">Loones</option>
+        </optgroup>
+        <optgroup label="Hoodies">
+          <option value="gwm">GWM Hoodie</option>
+          <option value="singleSize">Hoodie</option>
+        </optgroup>
+        <optgroup label="Tops">
+          <option value="raglan">Raglan T-shirts</option>
+          <option value="gwmTop">GWM T-shirt</option>
+          <option value="dress">Dress</option>
+          <option value="gwmDress">GWM Dress</option>
+        </optgroup>
+      </select>
+      <br /><br />
+
+      <label for="fabric">Choose a Fabric:</label>
+      <select name="fabric" id="fabric">
+        <option value="Fabric1">Fabric 1</option>
+        <option value="Fabric2">Fabric 2</option>
+        <option value="Fabric3">Fabric 3</option>
+        <option value="Fabric4">Fabric 4</option>
+        <option value="Fabric5">Fabric 5</option>
+        <option value="Fabric6">Fabric 6</option>
+        <option value="Fabric7">Fabric 7</option>
+        <option value="Fabric8">Fabric 8</option>
+      </select>
+      <br /><br />
+    </form>
+    <br />
+
+    <button id="myBtn">Submit</button>
+        <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Your order was submitted!</h2>
+            </div>
+        <div class="modal-body">
+          <p>Thank you for submitting your order!</p>
+          <p>Your support is appreciated.</p>
+        </div>
+        <div class="modal-footer">
+          <h3>You did it! You did it! Oh yeah, yeah, yeah!</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
