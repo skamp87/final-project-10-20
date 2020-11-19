@@ -5,80 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DD Order Form</title>
     <link rel="stylesheet" href="./OrderForm.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="./OrderForm.js" defer></script>
   </head>
   <body>
     <h1>Duden's Designs</h1>
     <h2>Order Form</h2>
 
+    <h4>All fabrics listed are made of cotton lycra materials.<br>
+       Upon submit your order, products have a two week turnaround.<br>
+       I do try and get items out as fast as humanly possible.<br>
+       However, I am still human.<br>
+       Please understand this when ordering.</h4>
     <br />
     <br />
+    
     <p>Main Fabric Prints:</p>
     <div class="slideshow-container">
       <div class="mySlides1">
-        <img src="./Images/Adventures-in-Space.jpg" style="width: 45%" />
+        <img src="./Images/Adventures-in-Space.jpg" style="width: 50%" />
         <div class="text">Adventures in Space</div>
       </div>
       <div class="mySlides1">
-        <img src="./Images/Funfetti-CL.jpg" style="width: 45%" />
+        <img src="./Images/Funfetti-CL.jpg" style="width: 50%" />
         <div class="text">Funfetti</div>
       </div>
       <div class="mySlides1">
-        <img src="./Images/Roses-N-Ravens.jpg" style="width: 45%" />
+        <img src="./Images/Roses-N-Ravens.jpg" style="width: 50%" />
         <div class="text">Roses & Ravens</div>
       </div>
       <div class="mySlides1">
-        <img src="./Images/skulls-and-roses.jpg" style="width: 45%" />
+        <img src="./Images/skulls-and-roses.jpg" style="width: 50%" />
         <div class="text">Skulls & Roses</div>
       </div>
       <div class="mySlides1">
-        <img src="./Images/Spike-in-the-city.jpg" style="width: 45%" />
+        <img src="./Images/Spike-in-the-city.jpg" style="width: 50%" />
         <div class="text">Spike in the City</div>
       </div>
       <div class="mySlides1">
-        <img src="./Images/Swim-with-sharks.jpg" style="width: 45%" />
+        <img src="./Images/Swim-with-sharks.jpg" style="width: 50%" />
         <div class="text">Swim with Sharks</div>
       </div>
       <div class="mySlides1">
-        <img src="./Images/Take-me-to-the-moon.jpg" style="width: 45%" />
+        <img src="./Images/Take-me-to-the-moon.jpg" style="width: 50%" />
         <div class="text">Take me to the Moon</div>
       </div>
       <div class="mySlides1">
-        <img src="./Images/Treasure-Hunt.jpg" style="width: 45%" />
+        <img src="./Images/Treasure-Hunt.jpg" style="width: 50%" />
         <div class="text">Treasure Hunt</div>
       </div>
       <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
       <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
     </div>
-
+<br>
+<br>
     <p>Solid Coordinating Prints:</p>
     <div class="slideshow-container">
       <div class="mySlides2">
-        <img src="./Images/two-tone-charcoal.jpg" style="width: 45%" />
+        <img src="./Images/two-tone-charcoal.jpg" style="width: 50%" />
         <div class="text">Two Tone Charcoal</div>
       </div>
       <div class="mySlides2">
-        <img src="./Images/teal-cotton-lycra.jpg" style="width: 45%" />
+        <img src="./Images/teal-cotton-lycra.jpg" style="width: 50%" />
         <div class="text">Teal</div>
       </div>
       <div class="mySlides2">
-        <img src="./Images/royal-blue-cotton-lycra.jpg" style="width: 45%" />
+        <img src="./Images/royal-blue-cotton-lycra.jpg" style="width: 50%" />
         <div class="text">Blue</div>
       </div>
       <div class="mySlides2">
-        <img src="./Images/red-cotton-lycra.jpg" style="width: 45%" />
+        <img src="./Images/red-cotton-lycra.jpg" style="width: 50%" />
         <div class="text">Red</div>
       </div>
       <div class="mySlides2">
-        <img src="./Images/orange-cotton-lycra.jpg" style="width: 45%" />
+        <img src="./Images/orange-cotton-lycra.jpg" style="width: 50%" />
         <div class="text">Orange</div>
       </div>
       <div class="mySlides2">
-        <img src="./Images/kelly-green.jpg" style="width: 45%" />
+        <img src="./Images/kelly-green.jpg" style="width: 50%" />
         <div class="text">Green</div>
       </div>
       <div class="mySlides2">
-        <img src="./Images/black-cotton-lycra.jpg" style="width: 45%" />
+        <img src="./Images/black-cotton-lycra.jpg" style="width: 50%" />
         <div class="text">Black</div>
       </div>
       <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
@@ -89,7 +97,7 @@
 
     <form>
       <label for="product">Product:</label>
-      <select name="product" id="product">
+      <select name="product" id="product" class="dropdown">
         <optgroup label="Loones Pants">
           <option value="squish">Squishiloones (NB-3 months)</option>
           <option value="mini">Miniloones (3-12 months)</option>
@@ -124,7 +132,7 @@
 
       <br /><br />
       <label for="mainFabric">Choose Main Fabric:</label>
-      <select name="mainFabric" id="mainFabric">
+      <select name="mainFabric" id="mainFabric" class="dropdown">
         <option value="Fabric1">Adventures in Space</option>
         <option value="Fabric2">Funfetti</option>
         <option value="Fabric3">Roses & Ravens</option>
@@ -137,7 +145,7 @@
 
       <br /><br />
       <label for="bandFabric">Choose Coordinating Fabric:</label>
-      <select name="bandFabric" id="bandFabric">
+      <select name="bandFabric" id="bandFabric" class="dropdown">
         <option value="twotonedgrey">Two-Tone Charcoal Grey</option>
         <option value="black">Black</option>
         <option value="blue">Blue</option>
@@ -147,10 +155,18 @@
         <option value="green">Green</option>
       </select>
       <br /><br />
+      <span>Comment box:</span>
       <div>
-        <textarea rows="10" columns="10" name="comment" id="comment">
-          Comments/Inquiry...
+        <textarea class="textarea" rows="10" name="comment" id="comment">
+Type Your Comments/Questions Here.
         </textarea>
+        <br>
+        <span>E-mail address:</span>
+        <div>
+          <textarea class="textarea">
+ex: myemail@hotmail.com
+          </textarea>
+        </div>
         <p>
           If you have specific requests about your order, please let me know in
           the comment box above. <br /><br />
@@ -163,7 +179,7 @@
     </form>
     <br />
 
-    <button id="myBtn">Submit</button>
+    <button id="myBtn">Submit Your Order</button>
     <div id="myModal" class="modal">
       <div class="modal-content">
         <div class="modal-header">
@@ -183,5 +199,15 @@
         </div>
       </div>
     </div>
+    <br>
+    <br>
+    <footer>
+    <div class="footer">
+      <body>
+        <i class="fa fa-facebook.com"></i>
+        <a href="https://www.facebook.com/DudensDesigns" class="fa fa-facebook"></a>
+      </body>
+    </div>
+  </footer>
   </body>
 </html>

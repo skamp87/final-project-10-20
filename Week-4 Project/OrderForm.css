@@ -7,33 +7,41 @@ body {
 
 h1, h2 {
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h4 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
 }
 
 p {
   text-size-adjust: 14px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 * {box-sizing: border-box}
-.mySlides1, .mySlides2 {display: none}
-img {vertical-align: middle;}
+.mySlides1, .mySlides2 {display: flex}
+img {vertical-align: baseline;
+}
 
 .slideshow-container {
-  max-width: 1000px;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
   position: relative;
   margin: auto;
 }
 
 /* Slideshow text */
 .text {
-  color: #f8f5f5;
+  color: #fffefe;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
-  width: 45%;
+  bottom: 0px;
+  width: 50%;
   text-align: center;
-  background-color: rgb(5, 4, 4);
+  background-color: rgb(10, 10, 10);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -44,20 +52,33 @@ img {vertical-align: middle;}
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: #f8f5f5;
+  color: #faf3f3;
   font-weight: bold;
   font-size: 18px;
-  background-color: rgb(5, 4, 4);
+  background-color:rgb(8, 8, 8);
 }
 
 .next {
   right: 0;
-  margin-right: 55%;
+  margin-right: 50%;
 }
 
 .prev:hover, .next:hover {
   background-color: #f1f1f1;
   color: black;
+}
+
+.dropdown {
+  background-color: rgb(216, 235, 247);
+  border-color: black;
+  border-radius: 5%;
+}
+
+.textarea {
+  width: 35%;
+  background-color: rgb(216, 235, 247);
+  border-color: black;
+  border-radius: 5%;
 }
 
 /* Modal background */
@@ -103,18 +124,19 @@ img {vertical-align: middle;}
   
   .modal-header {
     padding: 2px 16px;
-    background-color: #11f011;
+    background-color: #5a5a58;
     color: white;
     text-align: center;
   }
   
   .modal-body {
     padding: 2px 16px;
-    text-align: center;}
+    text-align: center;
+  }
   
   .modal-footer {
     padding: 2px 16px;
-    background-color: #11f011;
+    background-color: #5a5a58;
     color: white;
     text-align: center;
   }
@@ -127,4 +149,26 @@ img {vertical-align: middle;}
   @keyframes slideIn {
     from {bottom: -300px; opacity: 0}
     to {bottom: 0; opacity: 1}
+  }
+
+  /* footer w/ social media button */
+  footer {
+    background-color: rgb(2, 7, 8);
+    opacity: 0.4;
+    padding: 5px;
+    text-align: center;
+    color: white;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa-facebook {
+    background: #011e5e;
+    color: white;
   }

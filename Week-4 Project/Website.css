@@ -51,7 +51,7 @@ p {
     position: relative;
     display: none;
 }
-  #imgtext {
+#imgtext {
     position: absolute;
     bottom: 15px;
     left: 15px;
@@ -67,3 +67,24 @@ p {
     cursor: pointer;
     margin-right: 35%;
 }
+  /* footer w/ social media button */
+  footer {
+    background-color: rgb(2, 7, 8);
+    opacity: 0.4;
+    padding: 5px;
+    text-align: center;
+    color: white;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa-facebook {
+    background: #011e5e;
+    color: white;
+  }
