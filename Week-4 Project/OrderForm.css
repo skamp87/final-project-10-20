@@ -9,20 +9,24 @@ h1, h2 {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
 h4 {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: lighter;
 }
-
 p {
   text-size-adjust: 14px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* slideshow stuff */
 * {box-sizing: border-box}
 .mySlides1, .mySlides2 {display: flex}
-img {vertical-align: baseline;
+img {align-self: auto;
 }
 
 .slideshow-container {
@@ -39,7 +43,7 @@ img {vertical-align: baseline;
   padding: 8px 12px;
   position: absolute;
   bottom: 0px;
-  width: 50%;
+  width: 35%;
   text-align: center;
   background-color: rgb(10, 10, 10);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -60,7 +64,7 @@ img {vertical-align: baseline;
 
 .next {
   right: 0;
-  margin-right: 50%;
+  margin-right: 65%;
 }
 
 .prev:hover, .next:hover {

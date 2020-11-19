@@ -36,27 +36,31 @@ p {
 /* Gallery */
 .column {
     float: left;
-    width: 25%;
+    /* position: absolute; */
+    width: 15%;
     padding: 0px;
+    margin-left: 230px;
 }
 .column img {
     cursor: grabbing;
 }
 .row:after {
     content: "";
-    display: table;
+    display: flex;
     clear: both;
 }
 .container {
     position: relative;
-    display: none;
+    display: flex;
+    align-content: center;
 }
 #imgtext {
     position: absolute;
-    bottom: 15px;
-    left: 15px;
+    bottom: 20px;
+    left: 25px;
     color: white;
     font-size: 20px;
+    background-color: black;
 }
 .closebtn {
     position: absolute;
@@ -65,7 +69,7 @@ p {
     color: rgb(7, 1, 1);
     font-size: 35px;
     cursor: pointer;
-    margin-right: 35%;
+    margin-right: 50%;
 }
   /* footer w/ social media button */
   footer {
